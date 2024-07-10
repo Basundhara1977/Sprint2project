@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Website</title>
+    <style>
+        /* Global styles */
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            height: 100vh;
+            width: 100%;
+            background-image: url('background.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .nav {
+            margin-top: 20px;
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        .nav li {
+            margin: 0 10px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            padding: 10px;
+            transition: background-color 0.3s ease;
+        }
+
+        .nav a:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+            border-radius: 5px;
+        }
+
+        .music-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column; /* Allow items to wrap to the next line if needed */
+            margin-top: 20px;
+        }
+
+        .music-container audio {
+            margin: 0 10px; /* Adjust spacing between audio elements */
+        }
+
+        .content {
+            display: none; /* Hide all content initially */
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .content.active {
+            display: block; /* Display active content */
+        }
+
+        .content h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            line-height: 1.2;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            margin-bottom: 20px;
+        }
+
+        .content p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        /* Specific styles for each section */
+
+        /* Styles for Music Page */
+        .music {
+            /* No specific styles needed here, handled by .music-container */
+        }
+
+        /* Styles for Artists Page */
+        .artists {
+            margin-top: 50px;
+        }
+
+        .artist {
+            margin-bottom: 20px;
+        }
+
+        .artist img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        /* Styles for About Page */
+        .about {
+            margin-top: 50px;
+        }
+
+        /* Styles for Contact Page */
+        .contact {
+            margin-top: 50px;
+        }
+
+        .contact ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin-top: 20px;
+        }
+
+        .contact ul li {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <p>Explore the world of music with us.</p>
+
+        <ul class="nav">
+            <li><a href="#music">MUSIC</a></li>
+            <li><a href="#artists">ARTISTS</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <div id="music" class="content music">
+            <div class="music-container">
+                <audio controls>
+                    <source src="music1.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music2.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music3.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music4.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music5.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music6.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music7.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+                <audio controls>
+                    <source src="music8.mp3" type="audio/mp3">
+                    Your browser does not support the audio element.
+                </audio>
+            </div>
+        </div>
+
+        <div id="artists" class="content artists">
+            <div class="artist">
+                <h2>Artist 1</h2>
+                <img src="music1.jpg" alt="Artist 1">
+                <p> Arijit Singh and Shilpa Rao</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 2</h2>
+                <img src="music2.jpg" alt="Artist 2">
+                <p> Jasleen Royal and Arijit Singh</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 3</h2>
+                <img src="music3.jpg" alt="Artist 3">
+                <p>Celine Dion</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 4</h2>
+                <img src="music4.jpg" alt="Artist 3">
+                <p> K.K. | Vasundhara Das, Vasundhara Das</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 5</h2>
+                <img src="music5.jpg" alt="Artist 3">
+                <p>Arijit Singh and Jonita Gandhi</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 6</h2>
+                <img src="music6.jpg" alt="Artist 3">
+                <p>Jasleen Royal</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 7</h2>
+                <img src="music7.jpg" alt="Artist 3">
+                <p> Arijit Singh, Sukriti Kakar, Shekhar Ravjiani and Vishal Dadlani</p>
+            </div>
+            <div class="artist">
+                <h2>Artist 8</h2>
+                <img src="music8.jpg" alt="Artist 3">
+                <p> Saad Lamjarred, Shreya Ghoshal</p>
+            </div>
+        </div>
+
+        <div id="about" class="content about">
+            <p>This website is dedicated to bringing you the latest and greatest in music.</p>
+            <p>We aim to provide a platform for both established and emerging artists.</p>
+        </div>
+
+        <div id="contact" class="content contact">
+            <p>You can reach us via:</p>
+            <ul>
+                <li>Email: contact@yoursite.com</li>
+                <li>Phone: +1234567890</li>
+                <li>Address: 123 Music Street, City, Country</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Function to show/hide content based on navigation clicks
+        document.querySelectorAll('.nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                // Remove active class from all navigation items
+                document.querySelectorAll('.nav a').forEach(item => {
+                    item.classList.remove('active');
+                });
+
+                // Add active class to clicked navigation item
+                this.classList.add('active');
+
+                // Hide all content sections
+                document.querySelectorAll('.content').forEach(section => {
+                    section.classList.remove('active');
+                });
+
+                // Show the selected content section
+                let target = this.getAttribute('href').substring(1); // Remove '#'
+                document.getElementById(target).classList.add('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
